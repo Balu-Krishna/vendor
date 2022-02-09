@@ -1,0 +1,10 @@
+.product-image {
+    height: 188px !important;
+    margin: 0 auto;
+    display: block;
+}
+@media (min-width: 576px){
+.modal-sm {
+    max-width: 350px;
+}
+}

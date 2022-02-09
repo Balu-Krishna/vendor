@@ -1,0 +1,23 @@
+
+<div class="sidenav" >
+    <div class="logo-div position-relative">
+        <img src="assets/images/Logo.svg" /> 
+    </div> 
+     <ul class="menu-list"> 
+      <li [ngClass]="{'active' : router.url == '/'}"><a routerLink="/"> <img src="assets/images/dashboard.svg" />Dashboard</a></li>   
+      <li  routerLink="/onboarding"  [ngClass]="router.url === '/onboarding'|| router.url === '/vendor-policy' || router.url === '/vendor-terms' || router.url === '/vendor-products' || router.url === '/vendor-pickup'|| router.url === '/vendor-qr'|| router.url === '/vendor-coupons' || router.url === '/vendor-taxes' || router.url === '/vendor-commisions' || router.url === '/vendor-payments' || router.url === '/vendor-signature' ? 'active' : ''"><a> <img src="assets/images/nav/handshake.svg" />Onboarding</a></li> 
+      <li  routerLink="/create-store"  [ngClass]="router.url === '/create-store'|| router.url === '/add-store'  ? 'active' : ''" ><a > <img src="assets/images/nav/store.svg" />Create store</a></li> 
+      <li   [ngClass]="router.url === '/productsList'|| router.url === '/addProduct'  ? 'active' : ''"><a  routerLink="/productsList"> <img src="assets/images/nav/new-product.svg" /> Create Product</a></li> 
+      <li [ngClass]="router.url === '/payments'|| router.url === '/add-bank-details'  ? 'active' : ''" ><a routerLink="/payments"> <img src="assets/images/nav/bank.svg" />Payment Methods</a></li> 
+      <li  [ngClass]="router.url === '/offers'|| router.url === '/add-offer'  ? 'active' : ''"><a routerLink="/offers"> <img src="assets/images/nav/discount.svg" />Offers </a></li> 
+      <li [ngClass]="router.url === '/marketing'|| router.url === '/add-promotions'  ? 'active' : ''"><a routerLink="/marketing"> <img src="assets/images/nav/megaphone.svg" />Marketing</a></li> 
+      <li [ngClass]="{'active' : router.url == '/order-related'}"><a routerLink="order-related"> <img src="assets/images/nav/sent.svg"  />Order Related </a></li> 
+      <li [ngClass]="{'active' : router.url == '/pick-up'}"><a routerLink="/pick-up"> <img src="assets/images/nav/shopping-bag.svg" />Pick Up</a></li> 
+      <li [ngClass]="{'active' : router.url == '/in-store'}"><a routerLink="in-store"> <img src="assets/images/nav/store.svg" />Instore Purchase </a></li> 
+      <li  [ngClass]="{'active' : router.url == '/customer-orders'}"><a routerLink="customer-orders"> <img src="assets/images/nav/customer.svg" /> Customer</a></li> 
+      <li  [ngClass]="{'active' : router.url == '/store-management'}" ><a routerLink="/store-management" > <img src="assets/images/nav/storem.svg" />Store Management </a></li> 
+      <li   [ngClass]="{'active' : router.url == '/pos'}"><a routerLink="/pos"> <img src="assets/images/nav/XMLID_1_.svg" />POS Integration</a></li>
+    
+     </ul>  
+     
+    </div>

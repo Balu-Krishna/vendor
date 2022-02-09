@@ -1,0 +1,176 @@
+<h4 class="application-heading">Pickup From</h4>
+<div class="card">
+<div class="card-body">
+    <div class="row ">
+        <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Recipient Name<img src="assets/images/crowns.svg" class="table-crown"></mat-label>
+            <input matInput #input type="text" value="Rohit" required>
+          </mat-form-field>
+
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Mobile Number</mat-label>
+            <input matInput #input type="text"  required value="9999997777">
+          </mat-form-field>
+        <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Product ID</mat-label>
+            <input matInput #input type="text" value="JOY4689" required>
+          </mat-form-field>
+
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Product Name</mat-label>
+            <input matInput #input type="text"  required value="Bracelet">
+          </mat-form-field>
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Delivered to ID</mat-label>
+            <input matInput #input type="text" value="Rakesh" required>
+          </mat-form-field>
+
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Mobile Number</mat-label>
+            <input matInput #input type="text"  required value="9999999999">
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-6" floatLabel="always" required>
+            <mat-label>Status</mat-label>
+            <mat-select placeholder="Choose the Status">
+              <mat-option value="one" >Choice</mat-option>
+              <mat-option value="two"> Choice</mat-option>
+            </mat-select>
+          </mat-form-field>
+            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                <mat-label> Update Product ID</mat-label> 
+                <input matInput #input type="text" value="JOY4689" required>
+              </mat-form-field>
+           
+          <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label> Exchange </mat-label>
+            <input matInput #input type="text" placeholder="" value="Choose for exchange" required>
+           </mat-form-field>
+           
+        
+    <div class="form-group col-md-12" >
+        <mat-label class="formlabel mb-2" > Comments </mat-label>
+        <textarea  placeholder="Write here..." required class="form-control" rows="5" ></textarea>
+    </div>
+    
+
+<div class="mt-5 form-group">
+    <button class=" button"   >Submit</button> <button   class=" button-gray" >Canel</button>
+</div>
+
+
+</div> 
+</div>
+</div>
+<div class="card">
+    <div class="row align-items-center mb-3">
+        <div class="col-md-9 col-7 col-sm-7">
+           <h4 class="overview">Order History </h4>
+        </div>  
+        <div class="col-md-3 col-5 col-sm-5">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>All</mat-label>
+            <mat-select>
+              <mat-option All="All">
+                  All
+              </mat-option>
+              <mat-option >
+                Delivered
+            </mat-option>
+            <mat-option >
+              Cancelled
+          </mat-option>
+            </mat-select>
+          </mat-form-field> 
+           </div>
+       </div>
+       <div class="table-responsive"> 
+       <table class="table">
+        <thead>
+          <tr>
+            <th>Recipient <img src="assets/images/crowns.svg" class="table-crown"></th>
+            <th>Order ID</th>
+            <th>Product Id</th>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Delivered To</th>
+            <th>Delivery Date</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Rajesh</td>
+            <td>JOY1236</td>
+            <td>ORD1236</td>
+            <td>Bracelet</td>
+            <td><span class="pending">Pending</span></td>
+            <td>Ravi Kumar</td>
+            <td>29/10/2021 10: 30 AM</td>
+            <td>Rs. 3999</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Mukund</td>
+            <td>JOY1236</td>
+            <td>ORD1236</td>
+            <td>Bracelet</td>
+            <td><span class="pending">Pending</span></td>
+            <td>Ravi Kumar</td>
+            <td>29/10/2021 10: 30 AM</td>
+            <td>Rs. 3999</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Sreevani</td>
+            <td>JOY1236</td>
+            <td>ORD1236</td>
+            <td>Bracelet</td>
+            <td><span class="pending">Pending</span></td>
+            <td>Ravi Kumar</td>
+            <td>29/10/2021 10: 30 AM</td>
+            <td>Rs. 3999</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Anil</td>
+            <td>JOY1236</td>
+            <td>ORD1236</td>
+            <td>Bracelet</td>
+            <td><span class="pending">Pending</span></td>
+            <td>Ravi Kumar</td>
+            <td>29/10/2021 10: 30 AM</td>
+            <td>Rs. 3999</td>
+          </tr>
+          <tr>
+            <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Phani</td>
+            <td>JOY1236</td>
+            <td>ORD1236</td>
+            <td>Bracelet</td>
+            <td><span class="pending">Pending</span></td>
+            <td>Ravi Kumar</td>
+            <td>29/10/2021 10: 30 AM</td>
+            <td>Rs. 3999</td>
+          </tr>
+
+        </tbody>
+      </table>
+      </div>
+      <div class="text-end">
+      <ul class="pagination justify-content-end">
+        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+
+    <div class="modal-body text-danger">
+    <img src="assets/images/thumb.png" class="thumb-img">
+    <h4 class="created-msg">Product Added Successfully !</h4>
+    </div>
+
+  </div>
+</div>
+</div>s

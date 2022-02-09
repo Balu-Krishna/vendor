@@ -1,0 +1,126 @@
+<div class="mb-3 text-end">
+  <p class="nav-breadcrumb">Product / <span>Add Product details</span></p>  
+</div>
+<h4 class="application-heading">Add Product details</h4>
+<div class="card">
+<div class="card-body">
+    <div class="row ">
+      
+        <mat-form-field class="form-group col-md-4" floatLabel="always">
+            <mat-label> Product ID</mat-label>
+            <input matInput #input type="text" placeholder="Enter Product ID"  >
+          </mat-form-field>
+
+          <mat-form-field class="form-group col-md-4" floatLabel="always">
+            <mat-label> Product Name</mat-label>
+            <input matInput #input type="text"  placeholder="Enter Product Name">
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-4" floatLabel="always" required>
+            <mat-label> Catgeory</mat-label>
+            <mat-select placeholder="Select Catgeory">
+              <mat-option value="one">Catgeory</mat-option>
+              <mat-option value="two">Catgeory</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-4" floatLabel="always" required>
+            <mat-label> Sub Catgeory</mat-label>
+            <mat-select placeholder="Select Sub Catgeory">
+              <mat-option value="one">Sub Catgeory</mat-option>
+              <mat-option value="two"> Sub Catgeory</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="form-group col-md-4" floatLabel="always">
+            <mat-label> Price</mat-label>
+            <input matInput #input type="number" placeholder="Enter Product Price" required>
+            </mat-form-field>
+            <mat-form-field  class="form-group col-md-4" floatLabel="always" required>
+                <mat-label>Type</mat-label>
+                <mat-select placeholder="Enter  Type">
+                  <mat-option value="one">Type</mat-option>
+                  <mat-option value="two"> Type</mat-option>
+                </mat-select>
+              </mat-form-field>
+          <mat-form-field class="form-group col-md-4" floatLabel="always">
+            <mat-label> Gold Purity </mat-label>
+            <input matInput #input type="text" placeholder="Enter Purity" required>
+           </mat-form-field>
+           <mat-form-field  class="form-group col-md-4" floatLabel="always" required>
+            <mat-label>Size</mat-label>
+            <mat-select placeholder="Enter Size">
+              <mat-option value="one">Type</mat-option>
+              <mat-option value="two"> Type</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-4" floatLabel="always" required>
+            <mat-label>Clarity</mat-label>
+            <mat-select placeholder="Enter Clarity">
+              <mat-option value="one">Type</mat-option>
+              <mat-option value="two"> Type</mat-option>
+            </mat-select>
+          </mat-form-field>
+           <mat-form-field class="form-group col-md-4" floatLabel="always">
+            <mat-label> Taxes</mat-label>
+            <input matInput #input type="text" placeholder="Enter Taxes" >
+            </mat-form-field>
+            <mat-form-field class="form-group col-md-4" floatLabel="always">
+                <mat-label>No of units</mat-label>
+                <input matInput #input type="number" placeholder="Enter No of units" >
+                </mat-form-field>
+                <mat-form-field  class="form-group col-md-4"  floatLabel="always">
+                    <mat-label>Gender</mat-label>
+                    <mat-select placeholder="Select Gender">
+                      <mat-option value="one">Men</mat-option>
+                      <mat-option value="two">Women</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            
+        
+          <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label> Total Price</mat-label>
+            <input matInput #input type="email" placeholder="Enter Total Price" required>
+          </mat-form-field>
+
+          <div class="form-group col-md-12" >
+            <mat-label class="formlabel mb-2" > Product Description </mat-label>
+            <textarea  placeholder="Write here.."  class="form-control" rows="5"></textarea>
+        </div>
+          <div class="form-group col-md-6" >
+            <h6 class="form-highlight-text">Upload Product Images <span>(maximum 6)</span></h6>
+        <div class="upload-btn-wrapper text-center">
+            <img src="assets/images/uploadform.png" class="img-fluid" />
+            <label>Click to upload</label>
+            <input type="file" name="myfile" />
+          </div>
+        </div>
+        <div class="form-group col-md-6" >
+            <h6 class="form-highlight-text">Upload Product Video <span>(Optional)</span></h6>
+        <div class="upload-btn-wrapper text-center">
+            <img src="assets/images/uploadform.png" class="img-fluid" />
+            <label>Click to upload</label>
+            <input type="file" name="myfile" />
+          </div>
+        </div>
+
+    
+
+<div class="mt-5 form-group">
+    <button class=" button" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal"  >Save</button> <button routerLink="/productsList"  class=" button-gray" >Cancel</button>
+</div>
+
+
+</div> 
+</div>
+</div><div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+
+    <div class="modal-body text-danger">
+    <img src="assets/images/verified.svg" class="thumb-img">
+    <h4 class="created-msg">Product Added Successfully </h4>
+    </div>
+
+  </div>
+</div>
+</div>

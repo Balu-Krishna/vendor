@@ -1,0 +1,28 @@
+.first{
+    width:7%;
+    position: relative;
+    }
+    .second{
+        width:93%;
+    }
+    .notification-box h5{
+        font-size: 0.8rem;
+        color: #171E30;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    }
+    .notification-box{
+        margin-bottom: 0.5rem;
+        border-bottom: 1px dashed;
+        padding-bottom: 0.5rem;
+    }
+    
+    .notification-box  p{
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    }
+    .notification-box img{
+        position: absolute;
+        top: -30px;
+        right: 0;
+    }

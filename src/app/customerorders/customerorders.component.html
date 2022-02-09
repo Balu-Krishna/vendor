@@ -1,0 +1,251 @@
+<div class="row align-items-center ">
+    <div class="col-md-6 col-7 col-sm-7">
+       <h4 class="application-heading">Order </h4>
+    </div>  
+    <div class="col-md-4 col-5 col-sm-5">
+      <button type="button" class="btn1  filter__button" data-bs-toggle="modal" 
+      data-bs-target="#exampleModal"> 
+       
+        Filter  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+          <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"></path>
+          </svg>
+      </button>
+      </div> 
+      <div class="col-md-2 col-5 col-sm-5">
+        <mat-form-field class="example-full-width" appearance="outline">
+          <mat-label>All</mat-label>
+          <mat-select>
+            <mat-option All="All">
+                All
+            </mat-option>
+            <mat-option >
+              Delivered
+          </mat-option>
+          <mat-option >
+            Cancelled
+        </mat-option>
+          </mat-select>
+        </mat-form-field> 
+       </div>
+   </div>
+<div class="card">
+    <mat-tab-group mat-stretch-tabs>
+        <mat-tab label="Orders Picked Up" class="col">
+          <div class="table-responsive mt-3">
+
+
+            <table class="table">
+             <thead>
+               <tr>
+                 <th>Purchaser <img src="assets/images/crowns.svg" class="table-crown"></th>
+                 <th>Order Id</th>
+                 <th>Product Id</th> 
+                 <th>Product</th>
+                 <th>Status</th>
+                 <th>Date/Time</th>
+                 <th>Price</th>
+                 <th>Rating</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Rajesh</td>
+                 <td>1236</td>
+                 <td>JOY1236</td>
+                 <td>Bracelet</td>
+                 <td><span class="pending">Pending</span></td>
+                 <td>29/10/2021 10: 30 AM</td>
+                 <td>Rs. 3999</td>
+                 <td>4.5<i class="las la-star table-rating"></i></td>
+               </tr>
+               <tr>
+                 <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Mukund</td>
+                 <td>1236</td>
+                 <td>JOY1236</td>
+                 <td>Bracelet</td>
+                 <td><span class="success">Success</span></td>
+                 <td>29/10/2021 10: 30 AM</td>
+                 <td>Rs. 3999</td>
+                 <td>4.5<i class="las la-star table-rating"></i></td>
+               </tr>
+               <tr>
+                 <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Sreevani</td>
+                 <td>1236</td>
+                 <td>JOY1236</td>
+
+                 <td>Bracelet</td>
+                 <td><span class="pending">Pending</span></td>
+                 <td>29/10/2021 10: 30 AM</td>
+                 <td>Rs. 3999</td>
+                 <td>4.5<i class="las la-star table-rating"></i></td>
+               </tr>
+               <tr>
+                 <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Anil</td>
+                 <td>1236</td>
+                 <td>JOY1236</td>
+                 <td>Bracelet</td>
+                 <td><span class="cancelled">Pending</span></td>
+                 <td>29/10/2021 10: 30 AM</td>
+                 <td>Rs. 3999</td>
+                 <td>4.5<i class="las la-star table-rating"></i></td>
+               </tr>
+               <tr>
+                 <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Phani</td>
+                 <td>1236</td>
+                 <td>JOY1236</td>
+                 <td>Bracelet</td>
+                 <td><span class="success">Success</span></td>
+                 <td>29/10/2021 10: 30 AM</td>
+                 <td>Rs. 3999</td>
+                 <td>4.5<i class="las la-star table-rating"></i></td>
+               </tr>
+     
+             </tbody>
+           </table>
+         </div>
+           <div class="text-end">
+           <ul class="pagination justify-content-end">
+             <li class="page-item"><a class="page-link active" href="#">1</a></li>
+             <li class="page-item"><a class="page-link" href="#">2</a></li>
+             <li class="page-item"><a class="page-link" href="#">3</a></li>
+             <li class="page-item"><a class="page-link" href="#">Next</a></li>
+           </ul>
+         </div>
+
+    </mat-tab>
+    <mat-tab label="New Order purchases " class="col">
+      <div class="table-responsive mt-3">
+
+
+        <table class="table">
+         <thead>
+           <tr>
+             <th>Recipient <img src="assets/images/crowns.svg" class="table-crown"></th>
+             <th>Product Id</th>
+             <th>Product</th>
+             <th>Date/Time</th>
+             <th>Price</th>
+             <th>Rating</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Rajesh</td>
+             <td>JOY1236</td>
+             <td>Bracelet</td>
+             <td>29/10/2021 10: 30 AM</td>
+             <td>Rs. 3999</td>
+             <td>4.5<i class="las la-star table-rating"></i></td>
+           </tr>
+           <tr>
+             <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Mukund</td>
+             <td>JOY1236</td>
+             <td>Bracelet</td>
+             <td>29/10/2021 10: 30 AM</td>
+             <td>Rs. 3999</td>
+             <td>4.5<i class="las la-star table-rating"></i></td>
+           </tr>
+           <tr>
+             <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Sreevani</td>
+             <td>JOY1236</td>
+             <td>Bracelet</td>
+             <td>29/10/2021 10: 30 AM</td>
+             <td>Rs. 3999</td>
+             <td>4.5<i class="las la-star table-rating"></i></td>
+           </tr>
+           <tr>
+             <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Anil</td>
+             <td>JOY1236</td>
+             <td>Bracelet</td>
+             <td>29/10/2021 10: 30 AM</td>
+             <td>Rs. 3999</td>
+             <td>4.5<i class="las la-star table-rating"></i></td>
+           </tr>
+           <tr>
+             <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Phani</td>
+             <td>JOY1236</td>
+             <td>Bracelet</td>
+             <td>29/10/2021 10: 30 AM</td>
+             <td>Rs. 3999</td>
+             <td>4.5<i class="las la-star table-rating"></i></td>
+           </tr>
+ 
+         </tbody>
+       </table>
+     </div>
+       <div class="text-end">
+       <ul class="pagination justify-content-end">
+         <li class="page-item"><a class="page-link active" href="#">1</a></li>
+         <li class="page-item"><a class="page-link" href="#">2</a></li>
+         <li class="page-item"><a class="page-link" href="#">3</a></li>
+         <li class="page-item"><a class="page-link" href="#">Next</a></li>
+       </ul>
+     </div>
+        </mat-tab>
+    </mat-tab-group>
+</div>
+
+
+
+
+  <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+  labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered modal-lg"> 
+   
+    <div class="modal-content"> 
+    
+      <div class="container modal__padding">
+       
+        <div class="row">  
+          <h2 class="product_title"><span style="text-align: center;">Filter</span>  <span><img src="assets/images/del.png" data-bs-dismiss="modal" aria-label="Close" class="close_button"></span>
+                       
+              </h2> 
+            <div class="col-md-12 col-12">    
+            
+               <div class="row">
+                <div class="col-md-12 col-12 form_padding">  
+               
+                  <mat-form-field class="form-group col-md-12" floatLabel="always">
+                    <mat-label>Date</mat-label> 
+                    <input placeholder="Enter Date" matInput [matDatepicker]="picker1" style="opacity: inherit;
+                    position: initial;"> 
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>   
+
+                  <mat-form-field class="form-group col-md-12" floatLabel="always">
+                    <mat-label>Time</mat-label>
+                    <input matInput [matDatepicker]="picker1" placeholder="Enter Time" style="opacity: inherit;
+                    position: initial;"> 
+                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                    <mat-datepicker #picker1></mat-datepicker>
+                  </mat-form-field>  
+                  <div style="margin-left:14px"> 
+                  <h6  class="form-highlight-text">Status</h6> 
+                  
+                    
+                  <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="1" style="    border-color: #eea7a7;">Picked Up</mat-radio-button>
+                    <mat-radio-button value="2">Exchange</mat-radio-button>
+                    <mat-radio-button value="2">Cancelled</mat-radio-button>
+                  </mat-radio-group>
+                </div>
+                 
+                </div>
+                
+              </div> 
+              <div class="row button__top">
+                <div class="col-md-6  col-5 col-sm-5">
+                  <button type="button" class="btn  filter__button1" >Reset</button>
+              </div>  
+              <div class="col-md-2  col-5 col-sm-5"> 
+                <button type="button" class="btn  filter__button2" >Apply</button>
+            </div> 
+              </div>
+          </div> 
+        </div> 
+        </div>
+    </div>
+  </div>
+  </div>

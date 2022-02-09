@@ -1,0 +1,62 @@
+
+ <div class="mb-3 text-end">
+  <p class="nav-breadcrumb">Payment methods / <span> Add bank</span></p>  
+</div>
+<h4 class="application-heading">Bank Details</h4>
+
+<div class="card">
+<div class="card-body">
+    <div class="row ">
+      
+        <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Bank Name </mat-label>
+            <input matInput #input type="text"  placeholder="Enter Bank Name">
+          </mat-form-field>
+
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Bank holder Name</mat-label>
+            <input matInput #input type="text"  placeholder="Enter Bank holder Name">
+          </mat-form-field>
+        
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Bank Account number </mat-label>
+            <input matInput #input type="text"  placeholder="Enter Bank Account Number">
+           </mat-form-field>
+
+           <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> re-Bank Account number</mat-label>
+            <input matInput #input type="text" placeholder="Enter Bank Account Number">
+            </mat-form-field>
+            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                <mat-label>IFSC CODE</mat-label>
+                <input matInput #input type="number" placeholder="Enter IFSC CODE" >
+                </mat-form-field>
+             
+            
+        
+
+
+
+    
+
+<div class="mt-5 form-group">
+    <button class=" button" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal"  >Save</button> <button routerLink="/payments"  class=" button-gray" >Cancel</button>
+</div>
+
+
+</div> 
+</div>
+</div><div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+
+    <div class="modal-body text-danger">
+    <img src="assets/images/verified.svg" class="thumb-img">
+    <h4 class="created-msg">Bank Details Added Successfully </h4>
+    </div>
+
+  </div>
+</div>
+</div>

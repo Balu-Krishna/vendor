@@ -1,0 +1,88 @@
+<div class="mb-3 text-end">
+  <p class="nav-breadcrumb">Offers / <span>Add Offers</span></p>  
+</div> 
+<h4 class="application-heading">Offer Details</h4>
+<div class="card">
+<div class="card-body">
+    <div class="row ">
+      <mat-form-field class="form-group col-md-6" floatLabel="always">
+        <mat-label> Offer Name </mat-label>
+        <input matInput #input type="text" placeholder="Enter name"  required>
+      </mat-form-field>
+      <mat-form-field class="form-group col-md-6" floatLabel="always">
+        <mat-label> Offer Id </mat-label>
+        <input matInput #input type="text" placeholder="Enter Offer Id"  required>
+      </mat-form-field>
+        <mat-form-field  class="form-group col-md-6" floatLabel="always" required>
+            <mat-label>Offer Category</mat-label>
+            <mat-select placeholder="Select Offer Category">
+              <mat-option value="one">Regular</mat-option>
+              <mat-option value="two"> Occasional</mat-option>
+              <mat-option value="three"> Seasonal</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field  class="form-group col-md-6" floatLabel="always" required>
+            <mat-label>Offer Sub Category</mat-label>
+            <mat-select placeholder="Select Offer Sub Category">
+              <mat-option value="one">Regular</mat-option>
+              <mat-option value="two"> Occasional</mat-option>
+              <mat-option value="three"> Seasonal</mat-option>
+            </mat-select>
+          </mat-form-field>
+        
+          <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label> Offer Description</mat-label>
+            <input matInput #input type="text" placeholder="Enter Description" required>
+          </mat-form-field>
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label>Start date</mat-label>
+            <input matInput [matDatepicker]="picker1" placeholder="Start date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label>End  date</mat-label>
+            <input matInput [matDatepicker]="picker" laceholder="End date"> 
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+   
+          <div class="form-group col-md-12" >
+            <h6 class="form-highlight-text">Upload Banner Image</h6>
+        <div class="upload-btn-wrapper text-center">
+            <img src="assets/images/cloud-computing.svg" class="img-fluid" />
+            <label>Click to upload</label>
+            <input type="file" name="myfile" />
+          </div>
+        </div>
+      
+             
+            
+        
+
+
+
+    
+
+<div class="mt-5 form-group">
+    <button class=" button" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal" >Save</button> <button routerLink="/offers"  class=" button-gray" >Cancel</button>
+</div>
+
+
+</div> 
+</div>
+</div><div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+
+    <div class="modal-body text-danger">
+    <img src="assets/images/verified.svg" class="thumb-img">
+    <h4 class="created-msg">Offer Details Added Successfully !</h4>
+    </div>
+
+  </div>
+</div>
+</div>

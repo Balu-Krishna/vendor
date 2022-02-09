@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.609" height="20.948" viewBox="0 0 16.609 20.948">
+  <g id="shopping-bag" transform="translate(-53.023)">
+    <g id="Group_183" data-name="Group 183" transform="translate(53.023 4.133)">
+      <g id="Group_182" data-name="Group 182" transform="translate(0)">
+        <path id="Path_238" data-name="Path 238" d="M69.622,114.147l-.935-11.788A1.473,1.473,0,0,0,67.225,101H65.377v2.738a.614.614,0,0,1-1.227,0V101H58.506v2.738a.614.614,0,0,1-1.227,0V101H55.431a1.473,1.473,0,0,0-1.462,1.353l-.936,11.791a3.411,3.411,0,0,0,3.4,3.672h9.788a3.411,3.411,0,0,0,3.4-3.674Zm-5.53-6-3.173,3.173a.613.613,0,0,1-.868,0l-1.487-1.487a.613.613,0,1,1,.867-.868l1.054,1.053,2.739-2.739a.614.614,0,1,1,.867.868Z" transform="translate(-53.023 -101.005)" fill="#988149"/>
+      </g>
+    </g>
+    <g id="Group_185" data-name="Group 185" transform="translate(57.279)">
+      <g id="Group_184" data-name="Group 184" transform="translate(0)">
+        <path id="Path_239" data-name="Path 239" d="M161.088,0a4.054,4.054,0,0,0-4.049,4.049v.083h1.227V4.049a2.822,2.822,0,1,1,5.644,0v.083h1.227V4.049A4.054,4.054,0,0,0,161.088,0Z" transform="translate(-157.039)" fill="#988149"/>
+      </g>
+    </g>
+  </g>
+</svg>

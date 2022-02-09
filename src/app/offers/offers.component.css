@@ -1,0 +1,109 @@
+.second{
+    cursor: pointer;
+}
+.offer__title h4{
+    margin: 0 0 0px;
+    /* text-align: center; */
+    color:#A4A4A4;
+    font-size:12px
+}
+.product_title{
+    text-align: center;
+    padding-left: 46px;
+    padding-top: 17px;
+}
+.close_button{ 
+    float: right;
+    height: 38px;
+    /* padding-top: 10px; */
+    padding-right: 6px;
+}
+.offer__title{
+    padding-left: 96px;
+}
+.offer__title h3{
+    font-weight: 600 !important;
+    /* text-align: center; */
+    font-size:14px
+}
+.offer__title1 h4{
+    margin: 0 0 0px;
+    color:#A4A4A4;
+    font-size:12px
+}
+.offer__title1 h3{
+    font-size: 14px;
+    color: black;
+}
+.first_section{
+    margin-top:21px; 
+}
+.bottom_model{
+    margin-bottom: 35px;
+}
+.offer__title1{
+    padding-left: 32px;
+}
+.first{
+    width:15%;
+    }
+    
+    .third{
+        width:5%;
+        }
+    .second{
+        width:79%;
+        margin-left: 1%;
+    }
+    .offer-box h5{
+        font-size: 0.9rem;
+        color:var(--second);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    }
+    .offer-box  p{
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    }
+    .offer-box h6{
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        margin-top: 0.5rem;
+    }
+    .offer-image{
+        border-radius: 6px;
+        height: 80px;
+        width: 100%;
+    }
+    .offer-delete img{
+       height: 20px;
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+      .offer-box{
+          display: block !important;
+      } 
+      .offer-image{
+        height: 160px;
+    } 
+    .offer__title {
+        padding-left: 33px;
+    }
+    .offer__title1 {
+        padding-left: 0px;
+    }
+      .first{
+        width:100%;
+        margin-bottom: 0.5rem;;
+        }
+        .third{
+            width:15%;
+            display: inline-block;
+            vertical-align: top;
+            }
+        .second{
+            width:84%;
+            margin-left: 1%;
+            display: inline-block;
+        }
+    }

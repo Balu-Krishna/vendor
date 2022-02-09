@@ -1,0 +1,100 @@
+.table th {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.form_padding{
+ padding: 0px 86px;
+
+} 
+.table tr th{
+    padding: 0.4rem 0.4rem;
+}  
+
+.filter__button{
+    float:right; 
+    color: rgb(152 129 73);
+    border-color: rgb(152 129 73);
+}
+.cdk-overlay-container{
+    position: fixed;
+    z-index: 99999 !important;
+}
+.mat-select-panel {
+    margin-top: 37px; 
+}
+.modal__padding{ 
+    padding: 12px;
+}
+.filter__button1{
+    float:right; 
+    padding-left:25px;
+    padding-right:25px; 
+    color: rgb(152 129 73);
+    border-color: rgb(152 129 73);
+}
+.filter__button2{
+    float:right; 
+    padding-left:25px;
+    padding-right:25px; 
+    color: white; 
+    background-color: rgb(152 129 73);
+}
+.button__top{
+    margin-top:36px;  
+}
+.modal__padding h2{
+    margin: 0 0 36px; 
+}
+.product_title{
+    text-align: center;
+    padding-left: 46px;
+    padding-top: 17px;
+}
+.close_button{ 
+    float: right;
+    height: 38px;
+    /* padding-top: 10px; */
+    padding-right: 6px;
+}
+tr:nth-child(odd) {background-color: #F4F6F9;}
+.no{
+    margin-left: 48px;
+    padding: 3px 19px 4px 19px;
+}
+.yes{
+    margin-left: 103px;
+
+    padding: 3px 19px 4px 19px;
+}
+.btn_top{
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+.created-msg{
+    padding-top: 14px;
+}
+.product-image {
+    height: 177px !important;
+    margin: 0 auto;
+    display: block;
+}
+
+@media (max-width: 412px){
+    .form_padding {
+        padding: 0px 51px;
+    }
+    .mobile_filter{
+        margin-left: 25px;
+    }
+    
+}
+@media(max-width: 414px){
+    .form_padding {
+        padding: 0px 6px;
+    }
+}
+@media (min-width: 576px){
+.modal-sm {
+    max-width: 361px;
+}
+}

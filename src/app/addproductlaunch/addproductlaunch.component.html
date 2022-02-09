@@ -1,0 +1,91 @@
+<div class="mb-3 text-end">
+  <p class="nav-breadcrumb">Marketing / <span>Add Banners</span></p>  
+</div>
+<h4 class="application-heading">Product Launches</h4>
+<div class="card"> 
+<div class="card-body"> 
+    <div class="row "> 
+       
+        <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label> Product Name </mat-label>
+            <input matInput #input type="text"  placeholder="Enter Product Name"  >
+          </mat-form-field>
+       
+          <mat-form-field  class="form-group col-md-6" floatLabel="always" required>
+            <mat-label>Product Category</mat-label>
+            <mat-select placeholder="Select Category">
+              <mat-option value="one">Regular</mat-option>
+              <mat-option value="two"> Occasional</mat-option>
+              <mat-option value="three"> Seasonal</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-6" floatLabel="always" required>
+            <mat-label>Product Sub Category</mat-label>
+            <mat-select placeholder="Enter Category">
+              <mat-option value="one">Regular</mat-option>
+              <mat-option value="two"> Occasional</mat-option>
+              <mat-option value="three"> Seasonal</mat-option>
+            </mat-select> 
+          </mat-form-field>
+          <!-- <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label> Promotion Description </mat-label>
+            <input matInput #input type="text"  placeholder="Enter Promotion Description"  >
+          </mat-form-field> -->
+          <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label>Launch date</mat-label>
+            <input matInput [matDatepicker]="picker1" placeholder="Enter Date">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+          <div class="form-group col-md-12" >
+            <h6 class="form-highlight-text">Product Description</h6>
+            <textarea  placeholder="Write here..." required class="form-control" rows="5"></textarea>
+        </div>
+  
+          <div class="form-group col-md-6" >
+            <h6 class="form-highlight-text">Upload Product Image </h6>
+        <div class="upload-btn-wrapper text-center">
+            <img src="assets/images/uploadform.png" class="img-fluid" />
+            <label>Click to upload</label>
+            <input type="file" name="myfile" />
+          </div>
+        </div>
+
+        <div class="form-group col-md-6" > 
+            <h6 class="form-highlight-text">Upload Product Video </h6>
+        <div class="upload-btn-wrapper text-center">
+            <img src="assets/images/uploadform.png" class="img-fluid" />
+            <label>Click to upload</label>
+            <input type="file" name="myfile" />
+          </div>
+        </div>
+      
+             
+            
+        
+
+
+
+    
+
+<div class="mt-5 form-group">
+    <button class=" button" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal" >Save</button> <button routerLink="/offers"  class=" button-gray" >Cancel</button>
+</div>
+
+
+</div> 
+</div>
+</div><div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+
+    <div class="modal-body text-danger">
+    <img src="assets/images/verified.svg" class="thumb-img">
+    <h4 class="created-msg">Promotion Added Successfully !</h4> 
+    </div>
+
+  </div>
+</div>
+</div>

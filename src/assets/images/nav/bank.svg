@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  <g id="bank" transform="translate(0 0)">
+    <path id="Path_130" data-name="Path 130" d="M.089,453.779a.5.5,0,0,0,.409.214h16a.5.5,0,0,0,.466-.673,4.126,4.126,0,0,0-.7-1.145.5.5,0,0,0-.378-.174H1.114a.5.5,0,0,0-.378.174,4.127,4.127,0,0,0-.7,1.145.5.5,0,0,0,.057.459Z" transform="translate(0 -436.993)" fill="#988149"/>
+    <path id="Path_131" data-name="Path 131" d="M60,241h3.022v6.01H60Z" transform="translate(-58.008 -232.998)" fill="#988149"/>
+    <path id="Path_132" data-name="Path 132" d="M211,241h2.988v6.01H211Z" transform="translate(-203.994 -232.998)" fill="#988149"/>
+    <path id="Path_133" data-name="Path 133" d="M361,241h3.022v6.01H361Z" transform="translate(-349.014 -232.998)" fill="#988149"/>
+    <path id="Path_134" data-name="Path 134" d="M1.078,152.847a.5.5,0,0,0,.352.147H15.57a.5.5,0,0,0,.352-.147A4.339,4.339,0,0,0,17,151H0A4.339,4.339,0,0,0,1.078,152.847Z" transform="translate(0 -145.987)" fill="#988149"/>
+    <path id="Path_135" data-name="Path 135" d="M25.913,4.018,17.953.053a.5.5,0,0,0-.446,0L9.547,4.018Z" transform="translate(-9.23 0)" fill="#988149"/>
+  </g>
+</svg>

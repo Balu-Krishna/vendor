@@ -1,0 +1,32 @@
+mat-expansion-panel-header .mat-expansion-indicator::after {
+    content: "+";
+    border: 0;
+    transform: none;
+  }
+  
+  .mat-expansion-panel-header.mat-expanded .mat-expansion-indicator::after {
+    content: "-";
+  }
+  .help-row{
+    min-height: 200px;
+  }
+  .number-mb{
+  
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+
+  }
+  .number-mb img{
+height: 50px;
+  }
+  .talk{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .mat-accordion .mat-expansion-panel{
+background: #f4f6f9;
+border-bottom: none;
+margin-bottom: 1rem;;
+  }

@@ -1,0 +1,17 @@
+.user-img{
+    height: 100px;
+    display: block;
+    margin: 1rem auto;
+}
+.edit-icon{
+    color: var(--second);
+    text-decoration: none;
+    font-weight: 600;
+}
+.edit-icon i{
+font-size: 1.2rem;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: #eea7a7;
+}

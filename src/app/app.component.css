@@ -1,0 +1,115 @@
+
+.cir_img img{
+    position: absolute;
+    top: 110%;
+    z-index: 1;
+    width:8%;
+}
+.height_side{
+    height: 154%!important;
+}
+@media (min-width: 768px){
+    .col-md-2.sidenav-left {
+        flex: 0 0 auto;
+        width: 20%;
+        /* position: fixed; */
+       
+    }
+    .col-md-10.sidenav-right {
+        flex: 0 0 auto;
+        width: 80%;
+        /* margin-left: 21%; */
+    }
+    .container-fluid{
+        width: 95%;
+    }
+    }
+    .bars , .close-side{
+        display: none;
+    }
+    @media (min-width: 768px) and (orientation:portrait) {
+       
+       
+        .col-md-2.sidenav-left{
+            position: fixed; 
+            left: -100%;
+            z-index: 1007899999;
+            top: 0;
+            padding: 0;
+            border-radius: 0px;
+            -webkit-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            }
+            .active{
+                left:0% !important;
+                width:50% !important;
+            }
+        .col-md-10.sidenav-right {
+            flex: 0 0 auto;
+            width:100%;
+            margin-left: 0 !important;
+        }
+        .container-fluid{
+            width: 100%;
+        }
+        .bars{
+            display: block;
+            position: fixed;
+            font-size: 2.5rem;
+            top: 7px;
+            z-index: 100789;
+            color: var(--second);
+            font-weight: 600;
+        }
+                .active{
+                    left:0%;
+                }
+                .close-side{
+                    font-size: 3rem;
+            top: 11px;
+            display: block;
+            right: 5%;
+            position: absolute;
+            color: var(--second);
+            display:block;
+                }
+    }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 760px) {
+        .mbp-0{
+            padding: 0;
+        }
+        .sidenav-left{
+        position: fixed;
+        left: -100%;
+        z-index: 1007899999;
+        top: 0;
+        padding: 0;
+        border-radius: 0px;
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s;
+        }
+.bars{
+    display: block;
+    position: fixed;
+    font-size: 2.5rem;
+    top: 7px;
+    z-index: 100789;
+    color: var(--second);
+    font-weight: 600;
+}
+        .active{
+            left:0%;
+        }
+        .close-side{
+            font-size: 3rem;
+    top: 11px;
+    display: block;
+    right: 5%;
+    position: absolute;
+    color: var(--second);
+    display:block;
+        }
+    }
+    

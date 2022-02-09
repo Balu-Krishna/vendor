@@ -1,0 +1,34 @@
+<div class="mb-3 text-end">
+  <p class="nav-breadcrumb">Account / <span>Edit Profile</span></p>  
+</div>
+<h4 class="application-heading">Edit Profile</h4>
+<div class="card">
+    <div class="profile-img text-center " style="margin-bottom: 50px;">
+        <img class="img-fluid user-img" src="assets/images/vendorprofile.svg" alt="header-image">
+        <a class="edit-icon">Edit <i class="las la-pencil-alt"></i></a>
+    </div>
+    <div class="row">    <mat-form-field class="form-group col-md-6" floatLabel="always">
+        <mat-label> Email</mat-label>
+        <input matInput #input type="text"  required value="peter@gmail.com">
+      </mat-form-field>
+    
+    <mat-form-field class="form-group col-md-6" floatLabel="always">
+        <mat-label> Phone Number</mat-label>
+        <input matInput #input type="text"  required value="1234567890">
+      </mat-form-field>
+      <mat-form-field class="form-group col-md-12" floatLabel="always">
+        <mat-label> Address</mat-label>
+        <input matInput #input type="text"  required value="3rd Floor,Uni Space Business Center,Modern Profound Tech Park,Survey No: 12, Kondapur, Hyderabad-500032.">
+      </mat-form-field>
+    
+      <h6  class="form-highlight-text">Account</h6>
+
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1" style="    border-color: #eea7a7;">Active Account</mat-radio-button>
+        <mat-radio-button value="2">Deactivate Account</mat-radio-button>
+      </mat-radio-group>
+      <div class="mt-5 form-group">
+        <button class=" button"   >Save</button> <button   class=" button-gray" >Canel</button>
+    </div>
+      </div>
+    </div>

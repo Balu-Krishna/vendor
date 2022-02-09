@@ -1,0 +1,266 @@
+<div class="mb-3 text-end">
+  <p class="nav-breadcrumb">Create Store / <span>Add Store</span></p>  
+</div>
+<h4 class="application-heading">Add details</h4>
+<div class="card">
+<div class="card-body">
+    <div class="row ">
+      
+        <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Store Name</mat-label>
+            <input matInput #input type="text" placeholder="Enter Full store name" >
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-6" floatLabel="always" required>
+            <mat-label> Catgeory</mat-label>
+            <mat-select placeholder="Select Catgeory">
+              <mat-option value="null" selected> </mat-option>
+              <mat-option value="one">Catgeory</mat-option>
+              <mat-option value="two">Catgeory</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Phone number</mat-label>
+            <input matInput #input type="number" placeholder="Enter Phone Number" required>
+            </mat-form-field>
+          <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> Email </mat-label>
+            <input matInput #input type="email" placeholder="Enter Email Id" required>
+           </mat-form-field>
+           <mat-form-field class="form-group col-md-6" floatLabel="always">
+            <mat-label> GST number</mat-label>
+            <input matInput #input type="number" placeholder="Enter GST Number" required>
+            </mat-form-field>
+            <mat-form-field class="form-group col-md-6" floatLabel="always">
+                <mat-label>Store PAN number</mat-label>
+                <input matInput #input type="number" placeholder="Enter PAN Number" required>
+                </mat-form-field>
+                <mat-form-field  class="form-group col-md-6"  floatLabel="always">
+                    <mat-label> Country name</mat-label>
+                    <mat-select placeholder="Select Country">
+                      <mat-option value="one">Country</mat-option>
+                      <mat-option value="two">Country</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field  class="form-group col-md-6" floatLabel="always">
+                    <mat-label> State name</mat-label>
+                    <mat-select  placeholder="Select State">
+                      <mat-option value="one">State</mat-option>
+                      <mat-option value="two">State</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+          <mat-form-field  class="form-group col-md-6"  floatLabel="always">
+            <mat-label> City Name</mat-label>
+            <mat-select placeholder="Select City">
+              <mat-option value="one">City</mat-option>
+              <mat-option value="two">city2</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field  class="form-group col-md-6" floatLabel="always">
+            <mat-label> Locality</mat-label>
+            <mat-select  placeholder="Enter Locality">
+              <mat-option value="one">Locality</mat-option>
+              <mat-option value="two">Locality</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field class="form-group col-md-12" floatLabel="always">
+            <mat-label> Address</mat-label>
+            <input matInput #input type="email" placeholder="Enter Address" required>
+          </mat-form-field>
+
+
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+ <mat-label> Store manager name</mat-label>
+ <input matInput #input type="text" placeholder="Enter Full Name" required>
+</mat-form-field>
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+<mat-label> Store manager email</mat-label>
+<input matInput #input type="text" placeholder="Enter Email Id" required>
+</mat-form-field>
+<mat-form-field class="form-group col-md-6" floatLabel="always">
+    <mat-label> Store manager phone number</mat-label>
+    <input matInput #input type="number" placeholder="Enter phone number" required>
+    </mat-form-field>
+    <div class="form-group col-md-12" >
+        <h6 class="form-highlight-text">About Store</h6>
+        <textarea  placeholder="Write here..." required class="form-control" rows="5"></textarea>
+    </div>
+    <div class="form-group col-md-6" >
+        <h6 class="form-highlight-text">Store Manager Image</h6>
+    <div class="upload-btn-wrapper text-center">
+        <img src="assets/images/uploadform.png" class="img-fluid" />
+        <label>Click to upload</label>
+        <input type="file" name="myfile" />
+      </div>
+    </div>
+    <div class="form-group col-md-6" > 
+        <h6 class="form-highlight-text">Upload Logo</h6>
+    <div class="upload-btn-wrapper text-center">
+        <img src="assets/images/uploadform.png" class="img-fluid" />
+        <label>Click to upload</label>
+        <input type="file" name="myfile" />
+      </div>
+    </div>
+    <div class="form-group col-md-6" >
+        <h6 class="form-highlight-text">Upload Store Images</h6>
+    <div class="upload-btn-wrapper text-center">
+        <img src="assets/images/uploadform.png" class="img-fluid" />
+        <label>Click to upload</label>
+        <input type="file" name="myfile" />
+      </div>
+    </div>
+    <div class="form-group col-md-6" >
+        <h6 class="form-highlight-text">Store Certificates(If any)</h6>
+    <div class="upload-btn-wrapper text-center">
+        <img src="assets/images/uploadform.png" class="img-fluid" />
+        <label>Click to upload</label>
+        <input type="file" name="myfile" />
+      </div>
+    </div>
+
+<div class="mt-5 form-group">
+    <button class=" button" data-bs-toggle="modal" 
+    data-bs-target="#exampleModal"  >Save</button> <button routerLink="/create-store"  class=" button-gray" >Canel</button>
+    <button class=" button-red" >Onboarding</button>
+</div>
+
+
+</div> 
+</div>
+</div><div class="modal fade" id="exampleModal" tabindex="-1" aria- 
+labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm">
+  <div class="modal-content">
+
+    <div class="modal-body text-danger">
+    <img src="assets/images/verified.svg" class="thumb-img">
+    <h4 class="created-msg">Store Added Successfully </h4>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="container" style="background-color: white;">
+        <div class="row back_top">
+              <div class="col-md-4">
+                <h2>Store 1</h2>
+          </div>
+          <div class="col-md-4 text-center">
+            <img class="store_img" src="https://th.bing.com/th/id/R.b60245f51d3dee8058c5a580ae0cefc4?rik=gdZ4ReTaHh2mZg&riu=http%3a%2f%2fg-ec2.images-amazon.com%2fimages%2fG%2f31%2fimg15%2fjewellery%2f201510%2fJoyalukkas_Logo.png&ehk=AClBqFzITIX5j1F9fTi96wOCfsXH%2bXjY8nnuplDfTmQ%3d&risl=&pid=ImgRaw&r=0" >
+          </div>
+          <div class="col-md-4">
+              <h2 class="icon_dot dropdown-toggle"  data-bs-toggle="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+              </svg></h2>
+              <ul class="dropdown-menu">
+                <li>Edit </li>
+                <li>Delete</li>
+            
+              </ul>
+        </div>
+
+        </div>
+    <div class="row"> 
+        <div class="col-md-12">
+            
+             <div class="row first_section mt-3">
+                        <div class="col-md-4 offer__title" >
+                            <h4>STORE NAME</h4>
+                            <h3>Jayalukkas India ltd</h3>
+                        </div>
+                        <div class="col-md-4 offer__title" >
+                            <h4>CATEGORY</h4>
+                            <h3>Jayalukkas India ltd</h3>
+                        </div> 
+                        <div class="col-md-4 offer__title" >
+                            <h4>PHONE NUMBER</h4>
+                            <h3>9032771453</h3>
+                        </div>
+             </div>
+             <div class="row first_section">
+                  <div class="col-md-4 offer__title" >
+                    <h4>EMAIL ID</h4>
+                    <h3>Jayalukkas@gmail.com</h3>
+                </div>
+                <div class="col-md-4 offer__title" >
+                    <h4>GST NUMBER</h4>
+                    <h3>1254795365658254</h3>
+                </div> 
+                <div class="col-md-4 offer__title" >
+                    <h4>STORE PAN MANAGER</h4>
+                    <h3>APXVSA</h3>
+                </div>
+        
+            </div>
+
+            <div class="row first_section">
+              <div class="col-md-4 offer__title" >
+                <h4>COUNTRY NAME</h4>
+                <h3>India</h3>
+            </div>
+            <div class="col-md-4 offer__title" >
+                <h4>STATE NAME</h4>
+                <h3>Telangana</h3>
+            </div> 
+            <div class="col-md-4 offer__title" >
+                <h4>CITY NAME</h4>
+                <h3>Kondapur</h3>
+            </div>
+    
+        </div>
+
+        <div class="row first_section">
+          <div class="col-md-4 offer__title" >
+            <h4>LOCALITY</h4>
+            <h3>Hitech City Rd</h3>
+        </div>
+        <div class="col-md-8 offer__title" >
+            <h4>ADDRESS</h4>
+            <h3>Catraty to popular belifief. Catraty to popular belifief Catraty to popular belifief. </h3>
+        </div> 
+    </div>
+
+    <div class="row first_section">
+      <div class="col-md-4 offer__title" >
+        <h4>STORE MANAGER NAME</h4>
+        <h3>Rakesh Sharma</h3>
+    </div>
+    <div class="col-md-4 offer__title" >
+        <h4>STORE MANAGER EMAIL ID</h4>
+        <h3>rakesh@gmail.com</h3>
+    </div> 
+    <div class="col-md-4 offer__title" >
+        <h4>STORE MANAGER PHONE NUMBER</h4>
+        <h3>9032771453</h3>
+    </div>
+
+   </div>
+   <div class="row first_section">
+    <div class="col-md-12 offer__title" >
+      <h4>ABOUT STORE</h4>
+        <h3>Catraty to popular belifief. Catraty to popular belifief Catraty to popular belifief.  Catraty to popular belifief. Catraty to popular belifief Catraty to popular belifief. </h3>
+      </div>
+      </div>
+
+      <div class="row first_section">
+        <div class="col-md-4 offer__title" >
+          <h4>STORE MANAGER IMAGE</h4>
+          <h3><img src="https://eshop.joyalukkas.com/wp-content/uploads/2021/02/Joyalukkas-Valentines-day-BANNER-8-424x265.jpg"  class="img-fluid offer-image text-center" style="width:36%;height:15%"> </h3>
+      </div>
+      <div class="col-md-4 offer__title" >
+          <h4>STORE IMAGE</h4>
+          <h3><img src="https://eshop.joyalukkas.com/wp-content/uploads/2021/02/Joyalukkas-Valentines-day-BANNER-8-424x265.jpg"  class="img-fluid offer-image text-center" style="width:36%;height:15%"> </h3>
+      </div> 
+      <div class="col-md-4 offer__title" >
+          <h4>STORE CERTIFICATION</h4>
+          <h3><img src="https://eshop.joyalukkas.com/wp-content/uploads/2021/02/Joyalukkas-Valentines-day-BANNER-8-424x265.jpg"  class="img-fluid offer-image text-center" style="width:36%;height:15%"> </h3>
+      </div>
+  
+     </div>
+
+
+
+        </div>
+    </div>
+</div>

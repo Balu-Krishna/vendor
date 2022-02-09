@@ -1,0 +1,199 @@
+<h3 class="nametext">Hello, Peter</h3>
+<div class="row align-items-center mb-3">
+ <div class="col-md-10 col-7 col-sm-7">
+    <h4 class="overview">Overview dashboard </h4>
+ </div>  
+ <div class="col-md-2 col-5 col-sm-5">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Monthly</mat-label>
+    <mat-select>
+      <mat-option *ngFor="let item of Monthly" [value]="item.lable ">
+        {{item.value}} 
+      </mat-option>
+    </mat-select>
+  </mat-form-field>  
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="dashbox">
+      <ul class="list-inline d-flex">
+        <li class="list-inline-item"><img src="assets/images/Dashboard/1.svg" /></li>
+        <li class="list-inline-item"><h3>1000<span>Total number of pick-ups</span></h3></li>  
+      </ul>
+        </div>   
+       </div> 
+       <div class="col-md-4">
+        <div class="dashbox">
+      <ul class="list-inline d-flex">
+        <li class="list-inline-item"><img src="assets/images/Dashboard/2.svg" /></li>
+        <li class="list-inline-item"><h3>1300<span>Total of customers visited</span></h3></li>  
+      </ul>
+        </div>   
+       </div> 
+       <div class="col-md-4">
+        <div class="dashbox">
+      <ul class="list-inline d-flex">
+        <li class="list-inline-item"><img src="assets/images/Dashboard/3.svg" /></li>
+        <li class="list-inline-item"><h3>300<span>Total Number of instore purchases</span></h3></li>  
+      </ul>
+        </div>   
+       </div> 
+       <div class="col-md-4">
+        <div class="dashbox">
+      <ul class="list-inline d-flex">
+        <li class="list-inline-item"><img src="assets/images/Dashboard/4.svg" /></li>
+        <li class="list-inline-item"><h3>10<span>Offer redeemed</span></h3></li>  
+      </ul>
+        </div>   
+       </div> 
+       <div class="col-md-4">
+        <div class="dashbox">
+      <ul class="list-inline d-flex">
+        <li class="list-inline-item"><img src="assets/images/Dashboard/5.svg" /></li>
+        <li class="list-inline-item"><h3>345<span>Total sales</span></h3></li>  
+      </ul>
+        </div>   
+       </div> 
+   <div class="col-md-4">
+    <div class="dashbox">
+  <ul class="list-inline d-flex">
+    <li class="list-inline-item"><img src="assets/images/Dashboard/6.svg" /></li>
+    <li class="list-inline-item"><h3>10,00,00<span>Amount credited from Giftonn</span></h3></li>  
+  </ul>
+    </div>   
+   </div>  
+   <div class="col-md-12">
+    <div class="card">
+        <div class="row align-items-center mb-3">
+            <div class="col-md-10 col-7 col-sm-7">
+               <h4 class="overview">Marketing Expenditure  </h4>
+            </div>  
+            <div class="col-md-2 col-5 col-sm-5">
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>Yearly</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let item of Monthly" [value]="item.lable ">
+                    {{item.value}} 
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>  
+               </div>
+           </div>
+   <div class="chart-wrapper">
+    <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [colors]="barChartColors"
+    [chartType]="barChartType">
+  </canvas>
+</div>
+   </div>
+   </div>
+   <div class="col-md-12">
+    <div class="card">
+        <div class="row align-items-center mb-3">
+            <div class="col-md-10 col-7 col-sm-7">
+               <h4 class="overview">Order History </h4>
+            </div>  
+            <div class="col-md-2 col-5 col-sm-5">
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label>All</mat-label>
+                <mat-select>
+                  <mat-option All="All">
+                      All
+                  </mat-option>
+                  <mat-option >
+                    Delivered
+                </mat-option>
+                <mat-option >
+                  Cancelled
+              </mat-option>
+                </mat-select>
+              </mat-form-field> 
+              <!-- <div class="select" tabindex="1">
+                <input class="options-select " name="selectors" type="radio" id="gift1" >
+                <label for="gift1" class="option check" style="background-color: white;">All</label>
+                <input class="options-select" name="selectors" type="radio" id="gift2">
+                <label for="gift2" class="option"  style="background-color: white;">Delivered</label>
+                <input class="options-select" name="selectors" type="radio" id="gift3">
+                <label for="gift3" class="option"  style="background-color: white;">Cancelled</label>
+               
+               </div> -->
+               </div>
+           </div>
+           <div class="table-responsive"> 
+                       <table class="table">
+            <thead>
+              <tr>
+                <th>Recipient <img src="assets/images/crowns.svg" class="table-crown"></th>
+                <th>Product Id</th>
+                <th>Product</th>
+                <th>Status</th>
+                <th>Delivery Date</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Rajesh</td>
+                <td>JOY1236</td>
+                <td>Bracelet</td>
+                <td><span class="pending">Pending</span></td>
+                <td>29/10/2021 10: 30 AM</td>
+                <td>Rs. 3999</td>
+              </tr>
+              <tr>
+                <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Mukund</td>
+                <td>JOY1236</td>
+                <td>Bracelet</td>
+                <td><span class="success">Success</span></td>
+                <td>29/10/2021 10: 30 AM</td>
+                <td>Rs. 3999</td>
+              </tr>
+              <tr>
+                <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Sreevani</td>
+                <td>JOY1236</td>
+                <td>Bracelet</td>
+                <td><span class="pending">Pending</span></td>
+                <td>29/10/2021 10: 30 AM</td>
+                <td>Rs. 3999</td>
+              </tr>
+              <tr>
+                <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Anil</td>
+                <td>JOY1236</td>
+                <td>Bracelet</td>
+                <td><span class="cancelled">Cancelled</span></td>
+                <td>29/10/2021 10: 30 AM</td>
+                <td>Rs. 3999</td>
+              </tr>
+              <tr>
+                <td><img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png" class="table-img">Phani</td>
+                <td>JOY1236</td>
+                <td>Bracelet</td>
+                <td><span class="pending">Pending</span></td>
+                <td>29/10/2021 10: 30 AM</td>
+                <td>Rs. 3999</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+          <div class="text-end">
+          <ul class="pagination justify-content-end">
+            <li class="page-item"><span class="page-link active" href="#">1</span></li>
+            <li class="page-item"><span class="page-link" href="#">2</span></li>
+            <li class="page-item"><span class="page-link" href="#">3</span></li>
+            <li class="page-item"><span class="page-link" href="#">Next</span></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+
